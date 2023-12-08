@@ -1,0 +1,57 @@
+/*초기화*/
+* {margin:0; padding:0; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; word-break: keep-all;}
+html,body{max-width: 100%; min-height: 100%;}
+html{overflow-x: hidden; -webkit-text-size-adjust: none;}
+body{-webkit-print-color-adjust:exact; background: #fff; font-family: 'Montserrat', 'Noto Sans KR', sans-serif; font-style: normal; font-size: 16px; font-weight: 300; color: #333; line-height: 1.5; letter-spacing: -0.5px;}
+ul, li, dl,dt,dd {margin:0;padding:0;list-style:none}
+a{color:#333;text-decoration:none;}
+img {border: 0; font-size: 0; max-width: 100%;}
+h1, h2, h3, h4, h5, h6{font-size:1em;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;}
+textarea, select{font-family: 'Montserrat', 'Noto Sans KR', sans-serif;font-size:1em}
+input, button{margin:0;padding:0;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;font-size:1em}
+input[type="submit"], button{cursor:pointer}
+table, tr, td { border-collapse: collapse;}
+p{word-break: keep-all;}
+input{border-radius: 0;}
+
+/*폰트 설정 class*/
+.f_noto{font-family: 'Noto Sans KR', sans-serif;}
+.f_mont{font-family: 'Montserrat', sans-serif;}
+.fw500 {font-weight: 500 !important;}
+.fw600 {font-weight: 600 !important;}
+.fw700 {font-weight: 700 !important;}
+
+/*컨텐츠 가이드라인*/
+.wrapper{padding: 0 5vw; width: calc(1280px + 10vw); max-width: 100%; margin: 0 auto; height: 100%;}
+
+/* arrow symbol */
+i.arrow{display: inline-block; border: solid #000; border-width: 0 1px 1px 0; padding: 10px;}
+i.up{transform: rotate(-135deg); -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg);}
+i.down{transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg);}
+i.right{transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg);}
+i.left{transform: rotate(135deg); -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg);}
+
+/* input radio */
+.radio_wrap input[type=radio]{width: 0; height: 0; position: absolute; opacity: 0;}
+.radio_wrap input[type=radio]:focus-visible + label::before {outline: 1px solid #333;}
+.radio_wrap input[type=radio] + label{display: inline-block; cursor: pointer; position: relative; padding-left: 32px; font-size: 1rem; font-weight: 400; color: #666; line-height: 1;}
+.radio_wrap input[type=radio]+ label:before{content: ""; display: inline-block; width: 22px; height: 22px; position: absolute; left: 0; bottom: -3px; z-index: 1; border: 1px solid #bbb; border-radius: 50%; background-color: #fff;}
+.radio_wrap input[type=radio]:checked + label:before{border-color: #0090ff;}
+.radio_wrap input[type=radio]:checked + label:after{content: ""; display: inline-block; position: absolute; left: 6px; bottom: 3px; width: 12px; height: 12px; border-radius: 50%; background-color: #0090ff; z-index: 2;}
+
+/* input checkbox */
+.check_wrap input[type=checkbox]{display: none;}
+.check_wrap input[type=checkbox] + label{display: inline-block; cursor: pointer; position: relative; padding-left: 28px; font-size: 16px; font-weight: 400; color: #333; line-height: 1;}
+.check_wrap input[type=checkbox]+ label:before{content: ""; display: inline-block; width: 18px; height: 18px; position: absolute; left: 0; bottom: 0; z-index: 1; border: 1px solid #e4e4e4; border-radius: 0; background-color: #fff;}
+.check_wrap input[type=checkbox]:checked + label:before{border-color: #005e2e;}
+.check_wrap input[type=checkbox]:checked + label:after{content: ""; display: inline-block; position: absolute; left: 4px; bottom: 4px; width: 10px; height: 10px; border-radius: 0; background-color: #005e2e; z-index: 2;}
+
+.giup-input {padding: 0 20px; height: 45px; border: 1px solid #ededed; background-color: #f8f8f8; font-weight: 400; color: #666;}
+.giup-input:read-only {background-color: #fff;}
+.giup-input::placeholder {color: #bbb;}
+.giup-select {padding: 0 20px; height: 45px; border: 1px solid #ededed; background-color: #fff; font-weight: 400; appearance: none; background: url('../img/icon-select.svg') no-repeat center right 15px / 8px; color: #666; font-weight: 400;}
+
+/* cut text */
+.cut_text{width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+.sound_only {display: inline-block !important; position: absolute; top: 0; left: 0; width: 0; height: 0; margin: 0 !important; padding: 0 !important; font-size: 0; line-height: 0; border: 0 !important; overflow: hidden !important;}

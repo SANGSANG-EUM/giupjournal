@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기업저널</title>
+  <!-- css { -->
+  <link rel="stylesheet" href="../source/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../source/css/common.css">
+  <link rel="stylesheet" href="../source/css/fonts.css">
+  <link rel="stylesheet" href="../source/css/normal.css">
+  <link rel="stylesheet" href="../source/css/responsive.css">
+  <!-- } css -->
+  <!-- js { -->
+  <script src="../source/js/jquery-3.7.0.min.js"></script>
+  <script src="../source/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../source/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../source/js/normal.js"></script>
+  <!-- } js -->
+</head>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+  $(document).ready(function () {
+    $('#header-loaction').load("../include/header.html");
+  });
+  $(document).ready(function () {
+    $('#footer-loaction').load("../include/footer.html");
+  });
+  $(window).on('load', function(){
+    $('.header').addClass('sub');
+  });
+</script>
+
+<!-- header 임시 인클루드 { -->
+<div id="header-loaction"></div>
+<!-- } header 임시 인클루드 -->
+
+<body>
+
+<!-- Contents -->
+<div class="view container sub">
+
+  <div class="sub-location">
+    <div class="wrapper">
+      <ul class="sub-location-ul">
+        <li class="sub-location-li">
+          <a href="/">
+            <img src="../source/img/icon-home.png" alt="" style="width: 17px">
+          </a>
+        </li>
+        <li class="sub-location-li">
+          <p>프로그램</p>
+        </li>
+        <li class="sub-location-li">
+          <p>트렌드스페셜</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 컨텐츠 영역 -->
+  <div class="content">
+    <div class="board-view-wr">
+      <div class="wrapper">
+        <button type="button" onclick="history.go(-1)" class="board-back-btn"><img src="../source/img/icon-back_arrow.svg" alt="뒤로가기"><span>뒤로가기</span></button>
+
+        <div class="board-view-box f_noto">
+          <div class="board-view-top">
+            <div class="board-view-tit-wr">
+              <p class="board-view-tit">[건축] 금성건업 “친환경 이동식 주택 금성건업&하우징”</p>
+              <button type="button" class="board-view-share"><img src="../source/img/icon-share.svg" alt="공유하기"></button>
+            </div>
+            <div class="board-view-info-wr">
+              <ul class="board-view-info-ul">
+                <li class="board-view-info-li">
+                  <b>방송일</b> <span>2023.00.00</span>
+                </li>
+                <li class="board-view-info-li">
+                  <b>조회수</b> <span>647</span>
+                </li>
+              </ul>
+              <a href="" class="board-view-link" target="_blank"><img src="../source/img/icon-link_home.svg" alt="" style="width: 17px;"><span>기업 홈페이지 방문</span><img src="../source/img/icon-link_arrow.svg" alt="" style="width: 5px;"></a>
+            </div>
+          </div>
+          <div class="view-inner">
+            <div class="view-video-area">
+              <!-- 영상이 들어가는 부분 { -->
+              <iframe src="" frameborder="0" style="background-color: #ddd;"></iframe>
+              <!-- } 영상이 들어가는 부분 -->
+            </div>
+            <ul class="view-video-info-ul">
+              <li class="view-video-info-li">
+                <h5>[본문 타이틀]</h5>
+                <div class="view-video-info-txt">
+                  본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. <br>
+                  본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. <br>
+                  본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. 
+                </div>
+              </li>
+              <li class="view-video-info-li">
+                <h5>[본문 타이틀]</h5>
+                <div class="view-video-info-txt">
+                  본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. <br>
+                  본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. <br>
+                  본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. 본문 내용이 노출되는 영역입니다. 
+                </div>
+              </li>
+            </ul>
+            <ul class="view-video-btm-ul">
+              <li class="view-video-btm-li">
+                <div class="view-video-logo">
+                  <img src="../source/img/logo.svg" alt="">
+                </div>
+                <div class="view-video-writer">
+                  <span class="view-video-name">한명석</span>
+                  <span class="view-video-role">Creator</span>
+                </div>
+              </li>
+              <li class="view-video-btm-li">
+                <div class="view-video-staff-icon f_mont">Staff</div>
+                <ul class="view-video-staff-ul">
+                  <li class="view-video-staff-li">
+                    <span class="view-video-staff-role">촬영감독</span>
+                    <span class="view-video-staff-name">강 후 PD</span>
+                  </li>
+                  <li class="view-video-staff-li">
+                    <span class="view-video-staff-role">영상편집</span>
+                    <span class="view-video-staff-name">김문섭 PD</span>
+                  </li>
+                  <li class="view-video-staff-li">
+                    <span class="view-video-staff-role">성우</span>
+                    <span class="view-video-staff-name">김민철</span>
+                  </li>
+                  <li class="view-video-staff-li">
+                    <span class="view-video-staff-role">작가</span>
+                    <span class="view-video-staff-name">이서연</span>
+                  </li>
+                  <li class="view-video-staff-li">
+                    <span class="view-video-staff-role">웹디자인</span>
+                    <span class="view-video-staff-name">정수진</span>
+                  </li>
+                  <li class="view-video-staff-li">
+                    <span class="view-video-staff-role">SNS홍보</span>
+                    <span class="view-video-staff-name">이수진</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="view-like-ul">
+          <li class="view-like-li">
+            <button type="button" class="view-like-btn active">
+              <div class="view-like-icon">
+                <img src="../source/img/icon-like_good.svg" class="icon-like icon-like--normal">
+                <img src="../source/img/icon-like_good_hover.svg" alt="" class="icon-like icon-like--hover">
+                <img src="../source/img/icon-like_good_active.svg" class="icon-like icon-like--active">
+              </div>
+              <p class="view-like-num">346</p>
+              <p class="view-like-txt">좋아요</p>
+            </button>
+          </li>
+          <li class="view-like-li">
+            <button type="button" class="view-like-btn">
+              <div class="view-like-icon">
+                <img src="../source/img/icon-like_cool.svg" class="icon-like icon-like--normal">
+                <img src="../source/img/icon-like_cool_hover.svg" alt="" class="icon-like icon-like--hover">
+                <img src="../source/img/icon-like_cool_active.svg" class="icon-like icon-like--active">
+              </div>
+              <p class="view-like-num">50</p>
+              <p class="view-like-txt">멋져요</p>
+            </button>
+          </li>
+          <li class="view-like-li">
+            <button type="button" class="view-like-btn">
+              <div class="view-like-icon">
+                <img src="../source/img/icon-like_surprise.svg" class="icon-like icon-like--normal">
+                <img src="../source/img/icon-like_surprise_hover.svg" alt="" class="icon-like icon-like--hover">
+                <img src="../source/img/icon-like_surprise_active.svg" class="icon-like icon-like--active">
+              </div>
+              <p class="view-like-num">2</p>
+              <p class="view-like-txt">놀라워요</p>
+            </button>
+          </li>
+          <li class="view-like-li">
+            <button type="button" class="view-like-btn">
+              <div class="view-like-icon">
+                <img src="../source/img/icon-like_angry.svg" class="icon-like icon-like--normal">
+                <img src="../source/img/icon-like_angry_hover.svg" alt="" class="icon-like icon-like--hover">
+                <img src="../source/img/icon-like_angry_active.svg" class="icon-like icon-like--active">
+              </div>
+              <p class="view-like-num">0</p>
+              <p class="view-like-txt">화나요</p>
+            </button>
+          </li>
+          <li class="view-like-li">
+            <button type="button" class="view-like-btn">
+              <div class="view-like-icon">
+                <img src="../source/img/icon-like_sad.svg" class="icon-like icon-like--normal">
+                <img src="../source/img/icon-like_sad_hover.svg" alt="" class="icon-like icon-like--hover">
+                <img src="../source/img/icon-like_sad_active.svg" class="icon-like icon-like--active">
+              </div>
+              <p class="view-like-num">26</p>
+              <p class="view-like-txt">슬퍼요</p>
+            </button>
+          </li>
+        </ul>
+
+        <div class="board-view-list-wr">
+          <a href="" class="board-view-list">목록으로</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- // 컨텐츠 영역 -->
+
+</div>
+<!-- // Contents -->
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+</body>
+
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기업저널</title>
+  <!-- css { -->
+  <link rel="stylesheet" href="../source/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../source/css/common.css">
+  <link rel="stylesheet" href="../source/css/fonts.css">
+  <link rel="stylesheet" href="../source/css/normal.css">
+  <link rel="stylesheet" href="../source/css/responsive.css">
+  <!-- } css -->
+  <!-- js { -->
+  <script src="../source/js/jquery-3.7.0.min.js"></script>
+  <script src="../source/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../source/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../source/js/normal.js"></script>
+  <!-- } js -->
+</head>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+  $(document).ready(function () {
+    $('#header-loaction').load("../include/header.html");
+  });
+  $(document).ready(function () {
+    $('#footer-loaction').load("../include/footer.html");
+  });
+  $(window).on('load', function(){
+    $('.header').addClass('index');
+  });
+</script>
+
+<!-- header 임시 인클루드 { -->
+<div id="header-loaction"></div>
+<!-- } header 임시 인클루드 -->
+
+<body>
+  <!-- Contents { -->
+  <div class="main">
+    <div class="main-vs-slider">
+      <div class="swiper-wrapper">
+        <div class="main-vs-sl swiper-slide">
+          <div class="main-vs-wr">
+            <div class="main-vs-info">
+              <div class="wrapper">
+                <div class="main-vs-tit">
+                  <p class="main-vs-tit1">기업저널 월요일 프로그램</p>
+                  <p class="main-vs-tit2">성공열전K</p>
+                </div>
+                <div class="main-vs-txt">
+                  <p class="main-vs-txt1">
+                    기술력 및 경쟁력 있는 <b>중견 중소기업을 발굴</b>하여 <br> 그들의 성공노하우, 산업 트렌드, 비즈니스 정보를 생생하게 전달한다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main-vs-vd">
+              <iframe
+                src="https://www.youtube.com/embed/qE16i20UBIw?autoplay=1&mute=1&controls=0&loop=1&playlist=qE16i20UBIw"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="main-vs-sl swiper-slide">
+          <div class="main-vs-wr">
+            <div class="main-vs-info">
+              <div class="wrapper">
+                <div class="main-vs-tit">
+                  <p class="main-vs-tit1">기업저널 화요일 프로그램</p>
+                  <p class="main-vs-tit2">미래를여는사람들</p>
+                </div>
+                <div class="main-vs-txt">
+                  <p class="main-vs-txt1">
+                    맛있는 냉면 가격의 <br> 인상의 비밀은?!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main-vs-vd">
+              <iframe src="https://www.youtube.com/embed/f8lMPB54VZY?autoplay=1&mute=1&loop=1&playlist=f8lMPB54VZY "
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-ctr">
+        <div class="wrapper">
+          <button type="button" class="circle-btn mainvs-button mainvs-button-prev"><img
+              src="/source/img/icon-arrow_l.svg" alt="이전으로"></button>
+          <button type="button" class="circle-btn mainvs-button mainvs-button-next"><img
+              src="/source/img/icon-arrow_r.svg" alt="다음으로"></button>
+          <a href="" class="circle-btn mainvs-button mainvs-button-link plus-btn" title="더보기"></a>
+          <div class="mainvs-timer-wr">
+            <div class="mainvs-timer-in"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="mainsec mainsec--1">
+        <div class="onair-wr wrapper">
+          <div class="onair-left">
+            <div class="main-sm-tit main-sm-tit--dot">ON AIR</div>
+            <div class="onair-vd-wr">
+              <iframe id="ytPlayer" src="https://www.youtube.com/embed/Bh9ThtFMuc0?controls=0&enablejsapi=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <div class="onair-vd-ctr">
+                <div class="onair-vd-tit">
+                  [농업] 스페이스 캠핑카 - 김미숙 CEO
+                </div>
+                <div class="onair-vd-time">
+                  <span id="currentTime" class="onair-vd-time__now">00:00</span> / <span id="totalTime">00:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="onair-right">
+            <div class="onair-thumb-wr">
+              <div class="main-sm-tit">오늘의 방송</div>
+              <div class="onair-thumb"><img src="../source/img/onair-sample.png" alt="성공열전K"></div>
+            </div>
+            <div class="onair-list">
+              <p class="onair-list-tit">출연기업</p>
+              <ul class="onair-list-ul">
+                <li class="onair-list-li on">
+                  <a href="javscript:void(0);">
+                    <p class="onair-list-li__txt"><span class="onair-list-cate">농업</span>스페이스 캠핑카 스페이스 캠핑카스페이스 캠핑카스페이스
+                      캠핑카
+                      - 김미숙 CEO</p>
+                  </a>
+                </li>
+                <li class="onair-list-li">
+                  <a href="javscript:void(0);">
+                    <p class="onair-list-li__txt"><span class="onair-list-cate">플랫폼</span>스페이스 캠핑카 - 김미숙 CEO</p>
+                  </a>
+                </li>
+                <li class="onair-list-li">
+                  <a href="javscript:void(0);">
+                    <p class="onair-list-li__txt"><span class="onair-list-cate">농업</span>스페이스 캠핑카 - 김미숙 CEO</p>
+                  </a>
+                </li>
+                <li class="onair-list-li">
+                  <a href="javscript:void(0);">
+                    <p class="onair-list-li__txt"><span class="onair-list-cate">농업농업농업농업</span>스페이스 캠핑카 스페이스 캠핑카스페이스 캠핑카
+                      -
+                      김미숙 CEO</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainsec mainsec--2">
+        <div class="wrapper">
+          <div class="main-banner-wr">
+            <img src="../source/img/banner1.jpg" alt="TV방송 캠페인 함께뛰는 대한민국 출연문의. 1544-9672">
+          </div>
+        </div>
+      </div>
+      <div class="mainsec mainsec--3">
+        <div class="wrapper">
+          <div class="main-tit-wr">
+            <div class="main-tit">
+              뉴스 VOD
+            </div>
+            <div class="main-sort-wr">
+              <ul class="main-sort-ul">
+                <li class="main-sort-li main-sort-li--order on">
+                  <a href="">추천순</a>
+                </li>
+                <li class="main-sort-li main-sort-li--order">
+                  <a href="">인기순</a>
+                </li>
+                <li class="main-sort-li main-sort-li--order">
+                  <a href="">최신순</a>
+                </li>
+              </ul>
+              <a href="" class="circle-btn plus-btn wb" title="더보기"></a>
+            </div>
+          </div>
+          <div class="main-newsvod-wr">
+            <ul class="main-newsvod-ul main-newsvod-ul--top">
+              <li class="main-newsvod-li main-newsvod-li--top">
+                <a href="">
+                  <img src="https://picsum.photos/id/1084/500/500" alt="">
+                  <div class="main-newsvod-top-tit">[다큐S프라임 오리지널] 백두산의 100년 어쩌구 저쩌구 하는 제목</div>
+                </a>
+              </li>
+              <li class="main-newsvod-li main-newsvod-li--top">
+                <a href="">
+                  <img src="https://picsum.photos/id/1084/500/500" alt="">
+                  <div class="main-newsvod-top-tit">[다큐S프라임 오리지널] 백두산의 100년 어쩌구 저쩌구 하는 제목</div>
+                </a>
+              </li>
+              <li class="main-newsvod-li main-newsvod-li--top">
+                <a href="">
+                  <img src="https://picsum.photos/id/1084/500/500" alt="">
+                  <div class="main-newsvod-top-tit">[다큐S프라임 오리지널] 백두산의 100년 어쩌구 저쩌구 하는 제목</div>
+                </a>
+              </li>
+            </ul>
+            <ul class="main-newsvod-ul main-newsvod-ul--btm">
+              <li class="main-newsvod-li main-newsvod-li--btm">
+                <a href="">
+                  <div class="main-newsvod-btm-img">
+                    <img src="https://picsum.photos/id/1084/500/500" alt="">
+                  </div>
+                  <p class="main-newsvod-btm-tit">로스터리 카페에서도 사용한다?! 특화된 기술력으로 에너지 효율을 높여주는 어저구 저쩌구</p>
+                  <p class="main-newsvod-btm-cast">미래를여는사람들</p>
+                </a>
+              </li>
+              <li class="main-newsvod-li main-newsvod-li--btm">
+                <a href="">
+                  <div class="main-newsvod-btm-img">
+                    <img src="https://picsum.photos/id/1084/500/500" alt="">
+                  </div>
+                  <p class="main-newsvod-btm-tit">로스터리 카페에서도 사용한다?! 특화된 기술력으로 에너지 효율을 높여주는 어저구 저쩌구</p>
+                  <p class="main-newsvod-btm-cast">성공열전K</p>
+                </a>
+              </li>
+              <li class="main-newsvod-li main-newsvod-li--btm">
+                <a href="">
+                  <div class="main-newsvod-btm-img">
+                    <img src="https://picsum.photos/id/1084/500/500" alt="">
+                  </div>
+                  <p class="main-newsvod-btm-tit">강농 마늘파종기 감자파종기</p>
+                  <p class="main-newsvod-btm-cast">비즈라이프</p>
+                </a>
+              </li>
+              <li class="main-newsvod-li main-newsvod-li--btm">
+                <a href="">
+                  <div class="main-newsvod-btm-img">
+                    <img src="https://picsum.photos/id/1084/500/500" alt="">
+                  </div>
+                  <p class="main-newsvod-btm-tit">로스터리 카페에서도 사용한다?! 특화된 기술력으로 에너지 효율을 높여주는 어저구 저쩌구</p>
+                  <p class="main-newsvod-btm-cast">성공열전K</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mainsec mainsec--4">
+        <div class="wrapper">
+          <div class="main-tit-wr">
+            <div class="main-tit">
+              뉴스 프로그램
+            </div>
+          </div>
+          <div class="main-newspro-wr">
+            <ul class="main-newspro-ul">
+              <li class="main-newspro-li">
+                <a href="">
+                  <img src="../source/img/img-newspro_giup.jpg" alt="기업뉴스">
+                  <div class="main-newspro-info">
+                    <div class="main-newspro-txtwr">
+                      <p class="main-newspro-tit">기업뉴스</p>
+                      <p class="main-newspro-more">바로가기<img src="../source/img/icon-more_arrow.svg" alt=""></p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="main-newspro-li">
+                <a href="">
+                  <img src="../source/img/img-newspro_webtoon.jpg" alt="웹툰뉴스">
+                  <div class="main-newspro-info">
+                    <div class="main-newspro-txtwr">
+                      <p class="main-newspro-tit">웹툰뉴스</p>
+                      <p class="main-newspro-more">바로가기<img src="../source/img/icon-more_arrow.svg" alt=""></p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="main-newspro-li">
+                <a href="">
+                  <img src="../source/img/img-newspro_capture.jpg" alt="뉴스캡쳐">
+                  <div class="main-newspro-info">
+                    <div class="main-newspro-txtwr">
+                      <p class="main-newspro-tit">뉴스캡쳐</p>
+                      <p class="main-newspro-more">바로가기<img src="../source/img/icon-more_arrow.svg" alt=""></p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="main-newspro-li">
+                <a href="">
+                  <img src="../source/img/img-newspro_global.jpg" alt="글로벌뉴스">
+                  <div class="main-newspro-info">
+                    <div class="main-newspro-txtwr">
+                      <p class="main-newspro-tit">글로벌뉴스</p>
+                      <p class="main-newspro-more">바로가기<img src="../source/img/icon-more_arrow.svg" alt=""></p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mainsec mainsec--5">
+        <div class="wrapper">
+          <div class="main-banner-wr">
+            <img src="../source/img/banner2.jpg" alt="중소기업 홍보, 마케팅은 기업저널이 함께 합니다. 중소기업 홍보채널 기업저널. 1544-9672">
+          </div>
+        </div>
+      </div>
+      <div class="mainsec mainsec--6">
+        <div class="wrapper">
+          <div class="main-tit-wr">
+            <div class="main-tit">
+              산업별 VOD
+            </div>
+          </div>
+          <div class="mainsec5-inner">
+            <div class="main-indvod-wr">
+              <div class="main-indvod-slider category-slider">
+                <button type="button" class="main-indvod-btn main-indvod-prev cate-sl-btn cate-sl-prev"
+                  title="이전 카테고리"></button>
+                <div class="swiper-wrapper">
+                  <div class="main-indvod-sl main-indvod-sl--1 cate-sl cate-sl--1 swiper-slide on">
+                    <a href="javascript:void(0);" class="main-indvod-circle cate-sl-circle">
+                      <span>건설</span>
+                    </a>
+                  </div>
+                  <div class="main-indvod-sl main-indvod-sl--2 cate-sl cate-sl--2 swiper-slide">
+                    <a href="javascript:void(0);" class="main-indvod-circle cate-sl-circle">
+                      <span>건설</span>
+                    </a>
+                  </div>
+                  <div class="main-indvod-sl main-indvod-sl--3 cate-sl cate-sl--3 swiper-slide">
+                    <a href="javascript:void(0);" class="main-indvod-circle cate-sl-circle">
+                      <span>건설</span>
+                    </a>
+                  </div>
+                  <div class="main-indvod-sl main-indvod-sl--4 cate-sl cate-sl--4 swiper-slide">
+                    <a href="javascript:void(0);" class="main-indvod-circle cate-sl-circle">
+                      <span>건설</span>
+                    </a>
+                  </div>
+                  <div class="main-indvod-sl main-indvod-sl--5 cate-sl cate-sl--5 swiper-slide">
+                    <a href="javascript:void(0);" class="main-indvod-circle cate-sl-circle">
+                      <span>건설</span>
+                    </a>
+                  </div>
+                  <div class="main-indvod-sl main-indvod-sl--6 cate-sl cate-sl--6 swiper-slide">
+                    <a href="javascript:void(0);" class="main-indvod-circle cate-sl-circle">
+                      <span>건설</span>
+                    </a>
+                  </div>
+                  <div class="main-indvod-sl main-indvod-sl--7 cate-sl cate-sl--7 swiper-slide">
+                    <a href="javascript:void(0);" class="main-indvod-circle cate-sl-circle">
+                      <span>건설</span>
+                    </a>
+                  </div>
+                  <div class="main-indvod-sl main-indvod-sl--8 cate-sl cate-sl--8 swiper-slide">
+                    <a href="javascript:void(0);" class="main-indvod-circle cate-sl-circle">
+                      <span>건설</span>
+                    </a>
+                  </div>
+                </div>
+                <button type="button" class="main-indvod-btn main-indvod-next cate-sl-btn cate-sl-next"
+                  title="다음 카테고리"></button>
+              </div>
+              <div class="main-indvod-box match_h">
+                <div class="main-indvod-left">
+                  <ul class="main-indvod-left-ul">
+                    <li class="main-indvod-left-li">
+                      <a href="">
+                        <div class="main-indvod-img-wr"><img src="https://picsum.photos/id/1084/500/500" alt=""></div>
+                      </a>
+                    </li>
+                    <li class="main-indvod-left-li">
+                      <a href="">
+                        <div class="main-indvod-img-wr"><img src="https://picsum.photos/id/1084/500/500" alt=""></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-indvod-right">
+                  <ul class="main-indvod-right-ul">
+                    <li class="main-indvod-right-li">
+                      <a href="">
+                        <div class="main-indvod-img-wr"><img src="https://picsum.photos/id/1084/500/500" alt=""></div>
+                        <p class="main-indvod-txt">영상 타이틀 영역입니다. 영상 타이틀 영역입니다. 영상 타이틀 영역입니다.</p>
+                      </a>
+                    </li>
+                    <li class="main-indvod-right-li">
+                      <a href="">
+                        <div class="main-indvod-img-wr"><img src="https://picsum.photos/id/1084/500/500" alt=""></div>
+                        <p class="main-indvod-txt">영상 타이틀 영역입니다.</p>
+                      </a>
+                    </li>
+                    <li class="main-indvod-right-li">
+                      <a href="">
+                        <div class="main-indvod-img-wr"><img src="https://picsum.photos/id/1084/500/500" alt=""></div>
+                        <p class="main-indvod-txt">영상 타이틀 영역입니다. 영상 타이틀 영역입니다. 영상 타이틀 영역입니다.</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-ceo-wr">
+              <div class="main-ceo-tit-wr">
+                <div class="main-ceo-tit">오늘의 CEO</div>
+                <a href="" class="circle-btn plus-btn wb" title="더보기"></a>
+              </div>
+              <div class="main-ceo-box">
+                <ul class="main-ceo-ul">
+                  <li class="main-ceo-li">
+                    <a href="">
+                      <div class="main-ceo-img">
+                        <img src="https://picsum.photos/id/1084/500/500" alt="">
+                      </div>
+                      <div class="main-ceo-txt-wr">
+                        <p class="main-ceo-name">도종환 문화체육관광위원회 위원장</p>
+                        <p class="main-ceo-txt">더 나은 세상을 만드는 ‘철학이 있는 정치’</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="main-ceo-li">
+                    <a href="">
+                      <div class="main-ceo-img">
+                        <img src="https://picsum.photos/id/1084/500/500" alt="">
+                      </div>
+                      <div class="main-ceo-txt-wr">
+                        <p class="main-ceo-name">허 영 국회의원</p>
+                        <p class="main-ceo-txt">우리 사회의공정과 정의를 바로 잡고, 국가 권력 분산 우리 사회의공정과 정의를 바로 잡고, 국가 권력 분산</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="main-ceo-li">
+                    <a href="">
+                      <div class="main-ceo-img">
+                        <img src="https://picsum.photos/id/1084/500/500" alt="">
+                      </div>
+                      <div class="main-ceo-txt-wr">
+                        <p class="main-ceo-name">더불어민주당 장경태 국회의원</p>
+                        <p class="main-ceo-txt">우리 사회의공정</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="main-ceo-li">
+                    <a href="">
+                      <div class="main-ceo-img">
+                        <img src="https://picsum.photos/id/1084/500/500" alt="">
+                      </div>
+                      <div class="main-ceo-txt-wr">
+                        <p class="main-ceo-name">도종환 문화체육관광위원회 위원장</p>
+                        <p class="main-ceo-txt">더 나은 세상을 만드는 ‘철학이 있는 정치’</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainsec mainsec--7">
+        <div class="wrapper">
+          <div class="main-tit-wr">
+            <div class="main-tit">
+              방송 프로그램
+            </div>
+            <div class="main-program-ctr">
+              <button type="button" class="circle-btn main-program-button main-program-button-prev"><img
+                  src="/source/img/icon-arrow_l.svg" alt="이전으로"></button>
+              <button type="button" class="circle-btn main-program-button main-program-button-next"><img
+                  src="/source/img/icon-arrow_r.svg" alt="다음으로"></button>
+            </div>
+          </div>
+          <div class="main-program-slider">
+            <div class="swiper-wrapper">
+              <div class="main-program-sl swiper-slide">
+                <a href="">
+                  <img src="../source/img/img-main_program1.jpg" alt="현장탐방 오늘 한국 경제를 이끌어가는 중소기업 CEO들의 현장 STORY">
+                </a>
+              </div>
+              <div class="main-program-sl swiper-slide">
+                <a href="">
+                  <img src="../source/img/img-main_program2.jpg" alt="중소기업 토크쇼 MC 신혜리 비즈테크 기업의 기술력과 경쟁력을 소개하는 Program">
+                </a>
+              </div>
+              <div class="main-program-sl swiper-slide">
+                <a href="">
+                  <img src="../source/img/img-main_program3.jpg" alt="대한민국 1등 강소기업 시청률 1위 비즈라이프">
+                </a>
+              </div>
+              <div class="main-program-sl swiper-slide">
+                <a href="">
+                  <img src="../source/img/img-main_program4.jpg"
+                    alt="강소기업 소개 PROGRAM 비즈코리아 1대 MC 강성범 2대 MC 김흥국 3대 MC 김범수">
+                </a>
+              </div>
+              <div class="main-program-sl swiper-slide">
+                <a href="">
+                  <img src="../source/img/img-main_program5.jpg" alt="CEO의 성공스토리 프로그램 성공열전K">
+                </a>
+              </div>
+              <div class="main-program-sl swiper-slide">
+                <a href="">
+                  <img src="../source/img/img-main_program6.jpg" alt="SBSbiz 트렌드스페셜 본방송 수요일 13시 재방송 목요일 18시 35분">
+                </a>
+              </div>
+              <div class="main-program-sl swiper-slide">
+                <a href="">
+                  <img src="../source/img/img-main_program7.jpg" alt="YTN 글로벌 NO.1 최강기업 YTN 일요일 밤 8시 30분 특집">
+                </a>
+              </div>
+              <div class="main-program-sl swiper-slide">
+                <a href="">
+                  <img src="../source/img/img-main_program8.jpg" alt="YTN YTN줌인토크쇼 석세스토리 MC김태균 MC윤수현">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-partner-sec">
+        <div class="wrapper">
+          <div class="main-partner-slider-box">
+            <div class="main-partner-slider">
+              <button type="button" class="main-partner-button main-partner-button-prev"><img
+                  src="/source/img/icon-vodsl_prev.svg" alt="이전으로"></button>
+              <button type="button" class="main-partner-button main-partner-button-next"><img
+                  src="/source/img/icon-vodsl_next.svg" alt="다음으로"></button>
+              <button type="button" class="main-partner-button main-partner-button-pause stop"><img
+                  src="/source/img/icon-pause.png" alt="일시정지" style="width: 10px;"></button>
+              <div class="swiper-wrapper">
+                <div class="main-partner-sl swiper-slide">
+                  <a href="" target="_blank" title="새창열림">
+                    <img src="../source/img/img-partner1.jpg" alt="KBS" style="width: 103px;">
+                  </a>
+                </div>
+                <div class="main-partner-sl swiper-slide">
+                  <a href="" target="_blank" title="새창열림">
+                    <img src="../source/img/img-partner2.jpg" alt="SBS" style="width: 91px;">
+                  </a>
+                </div>
+                <div class="main-partner-sl swiper-slide">
+                  <a href="" target="_blank" title="새창열림">
+                    <img src="../source/img/img-partner3.jpg" alt="MBC" style="width: 83px;">
+                  </a>
+                </div>
+                <div class="main-partner-sl swiper-slide">
+                  <a href="" target="_blank" title="새창열림">
+                    <img src="../source/img/img-partner4.jpg" alt="TV조선" style="width: 88px;">
+                  </a>
+                </div>
+                <div class="main-partner-sl swiper-slide">
+                  <a href="" target="_blank" title="새창열림">
+                    <img src="../source/img/img-partner5.jpg" alt="JTBC" style="width: 70px;">
+                  </a>
+                </div>
+                <div class="main-partner-sl swiper-slide">
+                  <a href="" target="_blank" title="새창열림">
+                    <img src="../source/img/img-partner6.jpg" alt="채널A" style="width: 71px;">
+                  </a>
+                </div>
+                <div class="main-partner-sl swiper-slide">
+                  <a href="" target="_blank" title="새창열림">
+                    <img src="../source/img/img-partner7.jpg" alt="MBN" style="width: 78px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- } Contents -->
+
+
+  <script>
+    // YouTube iframe API 로드
+    var tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // YouTube 동영상 플레이어 객체 생성 및 이벤트 리스너 등록
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('ytPlayer', {
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    // 플레이어가 준비되면 호출되는 함수
+    function onPlayerReady(event) {
+      event.target.playVideo();
+      updateTime();
+    }
+
+    // 플레이어 상태 변경 시 호출되는 함수
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING) {
+        setInterval(updateTime, 500); // 0.5초마다 현재 재생 시간 업데이트
+      }
+    }
+
+    // 현재 재생 시간 업데이트 함수
+    function updateTime() {
+      var currentTime = player.getCurrentTime() + 0.5; // 시간 조정
+      var totalTime = player.getDuration();
+      var currentTimeFormatted = formatTime(currentTime);
+      var totalTimeFormatted = formatTime(totalTime);
+
+      document.getElementById('currentTime').textContent = currentTimeFormatted;
+      document.getElementById('totalTime').textContent = totalTimeFormatted;
+    }
+
+    // 시간을 "00:00" 분 초 형식으로 변환하는 함수
+    function formatTime(time) {
+      var minutes = Math.floor(time / 60);
+      var seconds = Math.floor(time % 60);
+      return pad(minutes) + ':' + pad(seconds);
+    }
+
+    // 숫자를 두 자리로 맞추기 위한 함수
+    function pad(number) {
+      return (number < 10) ? '0' + number : number;
+    }
+  </script>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+</body>
+
+</html>

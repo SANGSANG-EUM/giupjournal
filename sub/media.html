@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기업저널</title>
+  <!-- css { -->
+  <link rel="stylesheet" href="../source/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../source/css/common.css">
+  <link rel="stylesheet" href="../source/css/fonts.css">
+  <link rel="stylesheet" href="../source/css/normal.css">
+  <link rel="stylesheet" href="../source/css/responsive.css">
+  <!-- } css -->
+  <!-- js { -->
+  <script src="../source/js/jquery-3.7.0.min.js"></script>
+  <script src="../source/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../source/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../source/js/normal.js"></script>
+  <!-- } js -->
+</head>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+  $(document).ready(function () {
+    $('#header-loaction').load("../include/header.html");
+  });
+  $(document).ready(function () {
+    $('#footer-loaction').load("../include/footer.html");
+  });
+  $(window).on('load', function(){
+    $('.header').addClass('sub');
+  });
+</script>
+
+<!-- header 임시 인클루드 { -->
+<div id="header-loaction"></div>
+<!-- } header 임시 인클루드 -->
+
+<body>
+
+<!-- Contents -->
+<div class="board-list container sub">
+
+  <div class="sub-location">
+    <div class="wrapper">
+      <ul class="sub-location-ul">
+        <li class="sub-location-li">
+          <a href="/">
+            <img src="../source/img/icon-home.png" alt="" style="width: 17px">
+          </a>
+        </li>
+        <li class="sub-location-li">
+          <p>Media Center</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 컨텐츠 영역 -->
+  <div class="content">
+    <div class="sub-title-wr">
+      <div class="wrapper">
+        <p class="sub-title">Media Center</p>
+      </div>
+    </div>
+    <div class="board-list-wr">
+      <div class="wrapper">
+
+        <!-- 게시판 검색 { -->
+        <div class="board-top">
+          <div class="board-search-wr">
+            <form action="">
+              <select name="" id="" class="b-sch-select">
+                <option value="">전체</option>
+                <option value="">제목</option>
+                <option value="">내용</option>
+              </select>
+              <div class="b-sch-input-wr"><input type="text" class="b-sch-input" placeholder="검색어를 입력하세요."></div>
+              <button type="submit" class="b-sch-submit"><img src="../source/img/icon-search.svg" alt=""></button>
+            </form>
+          </div>
+        </div>
+        <!-- } 게시판 검색 -->
+
+        <!-- 갤러리 리스트 { -->
+        <div class="board-gall-wr">
+          <ul class="board-gall-ul">
+            <li class="board-gall-li">
+              <a href="" class="board-gall-link">
+                <div class="board-gall-thumb">
+                  <img src="https://picsum.photos/id/1000/500/500" alt="">
+                </div>
+                <div class="board-gall-info">
+                  <p class="board-gall-tit">제목이 노출될 영역입니다.</p>
+                  <p class="board-gall-date">2023.00.00</p>
+                </div>
+              </a>
+            </li>
+            <li class="board-gall-li">
+              <a href="" class="board-gall-link">
+                <div class="board-gall-thumb">
+                  <img src="https://picsum.photos/id/1000/500/500" alt="">
+                </div>
+                <div class="board-gall-info">
+                  <p class="board-gall-tit">제목이 노출될 영역입니다.</p>
+                  <p class="board-gall-date">2023.00.00</p>
+                </div>
+              </a>
+            </li>
+            <li class="board-gall-li">
+              <a href="" class="board-gall-link">
+                <div class="board-gall-thumb">
+                  <img src="https://picsum.photos/id/1000/500/500" alt="">
+                </div>
+                <div class="board-gall-info">
+                  <p class="board-gall-tit">제목이 노출될 영역입니다.</p>
+                  <p class="board-gall-date">2023.00.00</p>
+                </div>
+              </a>
+            </li>
+            <li class="board-gall-li">
+              <a href="" class="board-gall-link">
+                <div class="board-gall-thumb">
+                  <img src="https://picsum.photos/id/1000/500/500" alt="">
+                </div>
+                <div class="board-gall-info">
+                  <p class="board-gall-tit">제목이 노출될 영역입니다.</p>
+                  <p class="board-gall-date">2023.00.00</p>
+                </div>
+              </a>
+            </li>
+            <li class="board-gall-li">
+              <a href="" class="board-gall-link">
+                <div class="board-gall-thumb">
+                  <img src="https://picsum.photos/id/1000/500/500" alt="">
+                </div>
+                <div class="board-gall-info">
+                  <p class="board-gall-tit">제목이 노출될 영역입니다.</p>
+                  <p class="board-gall-date">2023.00.00</p>
+                </div>
+              </a>
+            </li>
+            <li class="board-gall-li">
+              <a href="" class="board-gall-link">
+                <div class="board-gall-thumb">
+                  <img src="https://picsum.photos/id/1000/500/500" alt="">
+                </div>
+                <div class="board-gall-info">
+                  <p class="board-gall-tit">제목이 노출될 영역입니다.</p>
+                  <p class="board-gall-date">2023.00.00</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- } 게시글 리스트 -->
+
+        <!-- 게시판 페이징 { -->
+        <div class="board-page-wr">
+          <a href="" class="board-page board-page--start"><img src="../source/img/icon-page_start.png" alt=""></a>
+          <a href="" class="board-page board-page--prev"><img src="../source/img/icon-page_prev.png" alt=""></a>
+          <a href="" class="board-page active">1</a> <!-- 현재 페이지에 active 클래스 추가 -->
+          <a href="" class="board-page">2</a>
+          <a href="" class="board-page">3</a>
+          <a href="" class="board-page">4</a>
+          <a href="" class="board-page">5</a>
+          <a href="" class="board-page">6</a>
+          <a href="" class="board-page">7</a>
+          <a href="" class="board-page">8</a>
+          <a href="" class="board-page">9</a>
+          <a href="" class="board-page">10</a>
+          <a href="" class="board-page board-page--next"><img src="../source/img/icon-page_next.png" alt=""></a>
+          <a href="" class="board-page board-page--end"><img src="../source/img/icon-page_end.png" alt=""></a>
+        </div>
+        <!-- } 게시판 페이징 -->
+      </div>
+    </div>
+  </div>
+  <!-- // 컨텐츠 영역 -->
+
+</div>
+<!-- // Contents -->
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+</body>
+
+</html>

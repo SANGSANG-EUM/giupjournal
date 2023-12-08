@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기업저널</title>
+  <!-- css { -->
+  <link rel="stylesheet" href="../source/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../source/css/common.css">
+  <link rel="stylesheet" href="../source/css/fonts.css">
+  <link rel="stylesheet" href="../source/css/normal.css">
+  <link rel="stylesheet" href="../source/css/responsive.css">
+  <!-- } css -->
+  <!-- js { -->
+  <script src="../source/js/jquery-3.7.0.min.js"></script>
+  <script src="../source/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../source/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../source/js/normal.js"></script>
+  <!-- } js -->
+</head>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+  $(document).ready(function () {
+    $('#header-loaction').load("../include/header.html");
+  });
+  $(document).ready(function () {
+    $('#footer-loaction').load("../include/footer.html");
+  });
+  $(window).on('load', function(){
+    $('.header').addClass('sub');
+  });
+</script>
+
+<!-- header 임시 인클루드 { -->
+<div id="header-loaction"></div>
+<!-- } header 임시 인클루드 -->
+
+<body>
+
+<!-- Contents -->
+<div class="board-list container sub">
+
+  <div class="sub-location">
+    <div class="wrapper">
+      <ul class="sub-location-ul">
+        <li class="sub-location-li">
+          <a href="/">
+            <img src="../source/img/icon-home.png" alt="" style="width: 17px">
+          </a>
+        </li>
+        <li class="sub-location-li">
+          <p>공지사항</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 컨텐츠 영역 -->
+  <div class="content">
+    <div class="sub-title-wr">
+      <div class="wrapper">
+        <p class="sub-title">공지사항</p>
+      </div>
+    </div>
+    <div class="board-list-wr">
+      <div class="wrapper">
+
+        <!-- 게시판 검색 { -->
+        <div class="board-top">
+          <div class="board-search-wr">
+            <form action="">
+              <select name="" id="" class="b-sch-select">
+                <option value="">전체</option>
+                <option value="">제목</option>
+                <option value="">내용</option>
+              </select>
+              <div class="b-sch-input-wr"><input type="text" class="b-sch-input" placeholder="검색어를 입력하세요."></div>
+              <button type="submit" class="b-sch-submit"><img src="../source/img/icon-search.svg" alt=""></button>
+            </form>
+          </div>
+        </div>
+        <!-- } 게시판 검색 -->
+
+        <!-- 게시글 리스트 { -->
+        <div class="board-table-wr">
+          <table class="board-table">
+            <thead>
+              <tr>
+                <th class="board-num">번호</th>
+                <th class="board-subject">제목</th>
+                <th class="board-date">등록일</th>
+                <th class="board-like">공감</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- loop { -->
+              <tr>
+                <td class="board-num"><img src="../source/img/icon-notice.svg" alt=""></td> <!-- 공지글일 경우 글 번호 대신 아이콘 노출 -->
+                <td class="board-subject"><a href=""><span>공지글일 경우 글 번호 대신 아이콘이 노출됩니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <!-- } loop -->
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+              <tr>
+                <td class="board-num">000</td>
+                <td class="board-subject"><a href=""><span>공지사항 타이틀이 노출될 영역입니다.</span></a></td>
+                <td class="board-date">2023.00.00</td>
+                <td class="board-like">0000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- } 게시글 리스트 -->
+
+        <!-- 게시판 페이징 { -->
+        <div class="board-page-wr">
+          <a href="" class="board-page board-page--start"><img src="../source/img/icon-page_start.png" alt=""></a>
+          <a href="" class="board-page board-page--prev"><img src="../source/img/icon-page_prev.png" alt=""></a>
+          <a href="" class="board-page active">1</a> <!-- 현재 페이지에 active 클래스 추가 -->
+          <a href="" class="board-page">2</a>
+          <a href="" class="board-page">3</a>
+          <a href="" class="board-page">4</a>
+          <a href="" class="board-page">5</a>
+          <a href="" class="board-page">6</a>
+          <a href="" class="board-page">7</a>
+          <a href="" class="board-page">8</a>
+          <a href="" class="board-page">9</a>
+          <a href="" class="board-page">10</a>
+          <a href="" class="board-page board-page--next"><img src="../source/img/icon-page_next.png" alt=""></a>
+          <a href="" class="board-page board-page--end"><img src="../source/img/icon-page_end.png" alt=""></a>
+        </div>
+        <!-- } 게시판 페이징 -->
+      </div>
+    </div>
+  </div>
+  <!-- // 컨텐츠 영역 -->
+
+</div>
+<!-- // Contents -->
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+</body>
+
+</html>

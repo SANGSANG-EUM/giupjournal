@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기업저널</title>
+  <!-- css { -->
+  <link rel="stylesheet" href="../source/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../source/css/common.css">
+  <link rel="stylesheet" href="../source/css/fonts.css">
+  <link rel="stylesheet" href="../source/css/normal.css">
+  <link rel="stylesheet" href="../source/css/responsive.css">
+  <!-- } css -->
+  <!-- js { -->
+  <script src="../source/js/jquery-3.7.0.min.js"></script>
+  <script src="../source/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../source/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../source/js/normal.js"></script>
+  <!-- } js -->
+</head>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+  $(document).ready(function () {
+    $('#header-loaction').load("../include/header.html");
+  });
+  $(document).ready(function () {
+    $('#footer-loaction').load("../include/footer.html");
+  });
+  $(window).on('load', function(){
+    $('.header').addClass('sub');
+  });
+</script>
+
+<!-- header 임시 인클루드 { -->
+<div id="header-loaction"></div>
+<!-- } header 임시 인클루드 -->
+
+<body>
+
+<!-- Contents -->
+<div class="about container sub">
+
+  <div class="sub-location">
+    <div class="wrapper">
+      <ul class="sub-location-ul">
+        <li class="sub-location-li">
+          <a href="/">
+            <img src="../source/img/icon-home.png" alt="" style="width: 17px">
+          </a>
+        </li>
+        <li class="sub-location-li">
+          <p>About US</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 컨텐츠 영역 -->
+  <div class="content">
+    <div class="sub-title-wr">
+      <div class="wrapper">
+        <p class="sub-title">About Us</p>
+      </div>
+    </div>
+    <section class="sub-section about-section about-section--video">
+      <div class="wrapper">
+        <div class="about-top-wr">
+          <p class="about-top-word">giup-journal</p>
+          <h2>
+            한국경제의 나침반인 중소기업을 위한 
+            <br>
+            <b>미디어 파트너 기업저널은</b>
+          </h2>
+          <div class="about-top-txt-wr">
+            <p class="about-top-txt">기업 현장을 심층 촬영 및 발 빠른 취재를 통해 특화된 기업뉴스와 기업정보를 전달하는 <b>중소기업 전문 매체</b>입니다.</p>
+            <p class="about-top-txt">기업저널은 중소기업의 성장과 발전을 함께 하며 기업 이슈와 비즈니스 알짜 정보를 제공하는 것을 목표로</p>
+            <p class="about-top-txt"><b class="fc-blue">오늘도 제작진은 힘차게 뛰고 있습니다.</b></p>
+          </div>
+        </div>
+        <div class="about-video">
+          <iframe src="" frameborder="0" style="background-color: #ddd;"></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="sub-section about-section about-section--slide">
+      <div class="wrapper">
+        <div class="about-slider-top">
+          <div class="about-top-wr">
+            <h2>
+              <b>시청자 및 독자와 함께</b> 
+              <br>
+              <b>정보를 만들고 <span class="fc-blue">공유</span>하고 <span class="fc-blue">활용</span>합니다.</b>
+            </h2>
+            <div class="about-top-txt-wr">
+              <p class="about-top-txt">기업저널은 멀티미디어 시대를 이끌어가는 중소기업 전문 정보채널로 자리매김하고 있으며 <br> 중소기업의 권익 대변 및  마케팅과 홍보를 효율적으로 진행할 수 있는 솔루션을 제공합니다.</p>
+            </div>
+          </div>
+          <div class="slide-ctr">
+            <button type="button" class="circle-btn about-button about-button-prev"><img src="../source/img/icon-arrow_l_gray.svg" alt="이전으로"></button>
+            <button type="button" class="circle-btn about-button about-button-next"><img src="../source/img/icon-arrow_r_gray.svg" alt="다음으로"></button>
+          </div>
+        </div>
+      </div>
+      <div class="about-slider-wr">
+        <div class="about-slider">
+          <div class="swiper-wrapper match_h">
+            <div class="swiper-slide about-slide">
+              <div class="about-sl-top-wr">
+                <div class="about-sl-top">
+                  <div class="about-sl-step">solution 01</div>
+                  <p class="about-sl-title">기업이슈 심층전달</p>
+                </div>
+                <div class="about-sl-icon">
+                  <img src="../source/img/icon-about_sl01.svg" alt="" style="width: 37px;">
+                </div>
+              </div>
+              <div class="about-sl-cnt">
+                <p class="about-sl-txt">우수한 기술력과 경쟁력을 보유하고 있음에도 불구하고 마케팅과 홍보에 <br> 어려움을 겪는 중소기업 대상으로 <span>TV방송, 온라인뉴스, SNS 등 <br>
+                  크로스미디어 전략으로 기업 이슈를 심층 전달 합니다.</span>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide about-slide">
+              <div class="about-sl-top-wr">
+                <div class="about-sl-top">
+                  <div class="about-sl-step">solution 02</div>
+                  <p class="about-sl-title">CEO 인터뷰</p>
+                </div>
+                <div class="about-sl-icon">
+                  <img src="../source/img/icon-about_sl02.svg" alt="" style="width: 30px;">
+                </div>
+              </div>
+              <div class="about-sl-cnt">
+                <p class="about-sl-txt">기업저널 소속 아나운서 및 제작진이 CEO 인터뷰를 심층 촬영 및 <br> 발 빠른 취재를 통해 기업의 과거, 현재, 미래를 집중 조명하여, <br> <span>일하는 임직원의 자긍심과 예비 입사지원자들이 기업을 이해</span>하는 데 <br> 도움이 될 수 있는 영상 콘텐츠를 다룹니다.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide about-slide">
+              <div class="about-sl-top-wr">
+                <div class="about-sl-top">
+                  <div class="about-sl-step">solution 03</div>
+                  <p class="about-sl-title">알짜 경제정보</p>
+                </div>
+                <div class="about-sl-icon">
+                  <img src="../source/img/icon-about_sl01.svg" alt="" style="width: 37px;">
+                </div>
+              </div>
+              <div class="about-sl-cnt">
+                <p class="about-sl-txt">다양한 기업 관련 영상 콘텐츠 및 뉴스가 쏟아져 나오는 가운데 <br> 다양한 기관, 상장기업, 대형언론사, 콘텐츠전문가, 홍보전문가와 협업을 <br> 통해 비즈니스 정보, 사업아이디어, 창업 정보 등의 알짜 경제정보를 <br> 엄선하여 제공하는 <span>경제정보 플랫폼으로 양질의 콘텐츠를 제공</span>합니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide about-slide">
+              <div class="about-sl-top-wr">
+                <div class="about-sl-top">
+                  <div class="about-sl-step">solution 04</div>
+                  <p class="about-sl-title">발빠른 기업뉴스</p>
+                </div>
+                <div class="about-sl-icon">
+                  <img src="../source/img/icon-about_sl02.svg" alt="" style="width: 30px;">
+                </div>
+              </div>
+              <div class="about-sl-cnt">
+                <p class="about-sl-txt">TV방송, 뉴스보도, TV광고, 홈쇼핑, 유튜브 광고, 연예인 섭외, 기업홍보영상 제작 등 <br> <span>다양한 형태의 미디어 활용 노하우를 가진 “기업저널”의 20년 노하우를 제공</span>합니다. 중소기업 뉴스플랫폼으로 시간·장소 제약 없이 언제 어디서든 기업뉴스를 시청할 수 있도록 제공합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- // 컨텐츠 영역 -->
+
+</div>
+<!-- // Contents -->
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+</body>
+
+</html>
